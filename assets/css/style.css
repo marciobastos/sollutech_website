@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+:root {
+	/*--backgroundColor: rgb(42,170,22);
+	--backgroundGradiente: linear-gradient(135deg, rgb(68 229 43) 74%, rgba(255,255,255,1) 100%);*/
+	/* main
+	--backgroundColor: #0ddc20;
+	--backgroundImage: linear-gradient(160deg, #0ddc20 0%, #93e9c5 100%); */
+
+	--backgroundColor: rgb(25, 96, 11);
+	--backgroundImage: linear-gradient(170deg,rgba(8, 86, 9, 1.0) 0%, rgba(30, 125, 13, 1.0) 44%,
+		rgba(41, 239, 137, 1.0) 98%);
+
+	/*--backgroundGradiente: linear-gradient(160deg, rgba(42,170,22,1) 56%, rgba(255,255,255,1) 100%); */
+	--container: 1200px;
+}
+
+nav {
+	width: 100vw;
+	height: 4rem;
+	position: fixed;
+	background-color: var(--backgroundColor);
+	background-image: var(--backgroundImage);
+	box-shadow: 0 0.5rem 0.5rem rgba(12, 3, 27, 1.0);
+}
+.container {
+	margin: auto;
+	padding: 0 10px 0 10px;
+	max-width: var(--container);
+	/*background: black; */
+}
+.nav__menu {
+	display: flex;
+	line-height: 60px;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.nav__logo h2{
+	font-size: 25px;
+}
+#nav__items {
+	display: flex;
+	/*flex-direction: row;*/
+}
+#nav__items li a{
+	margin-right: 10px;
+	color: #fff;
+}
+button {
+	display: none;
+}
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) =======================*/
+@media screen and (max-width: 1024px) {
+	button {
+		display: inline-block;
+		background: transparent;
+		color: #fff;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	#close__nav-btn {
+		display: none
+	}
+	ul#nav__items {
+		position: fixed;
+		right: 10px;
+		top: 4rem;
+		flex-direction: column;
+		display: none;
+	}
+	ul li {
+		color:  #fff;
+		height: 100%;
+		padding: 0.5rem 1.5rem;
+		display: block;
+		border-radius: 0;
+		background: var(--backgroundImage);
+	}
+
+}
+
+
+
+
+
+
+
+
+
