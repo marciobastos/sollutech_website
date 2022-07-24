@@ -35,19 +35,20 @@ nav {
 	position: fixed;
 	background-color: var(--backgroundColor);
 	background-image: var(--backgroundImage);
-	box-shadow: 0 0.5rem 0.5rem rgba(12, 3, 27, 1.0);
+	box-shadow: 0 0.1rem 1.2rem rgba(12, 3, 27, 1.0);
 }
 .container {
-	margin: auto;
+	margin: 0 auto;
 	padding: 0 10px 0 10px;
 	max-width: var(--container);
-	/*background: black; */
+	/*background: red;*/
 }
 .nav__menu {
 	display: flex;
-	line-height: 60px;
+	line-height: 4rem;
 	justify-content: space-between;
 	align-items: center;
+	/*background: black;*/
 	
 }
 .nav__logo h2{
