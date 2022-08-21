@@ -34,6 +34,7 @@ body {
 nav {
 	width: 100vw;
 	height: 4rem;
+	/*padding: 0 10px 0 10px;*/
 	position: fixed;
 	background-color: var(--primaryBgColor);
 	background-image: var(--backgroundImage);
@@ -42,7 +43,7 @@ nav {
 }
 .container {
 	margin: 0 auto;
-	padding: 0 10px 0 10px;
+	
 	max-width: var(--container);
 	/*background: red;*/
 }
@@ -70,6 +71,12 @@ button {
 }
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) =======================*/
 @media screen and (max-width: 1024px) {
+	nav {
+		padding: 0 10px 0 10px;
+	}
+}
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) =======================*/
+@media screen and (max-width: 768px) {
 	button {
 		display: inline-block;
 		background: transparent;
@@ -87,6 +94,7 @@ button {
 		flex-direction: column;
 		display: none;
 		perspective: 300px;
+		bottom: 0;
 	}
 	li {
 		width: 100%;
@@ -140,6 +148,8 @@ button {
 .myslide img {
 	max-width: var(--container);
 	height: 100vh;
+	width: 100%;
+	object-fit: cover;
 }
 .prev, .next{
 	position: absolute;
@@ -262,9 +272,9 @@ img{
 
 /* 5 */
 @media screen and (max-width: 800px){
-	.myslide{
+	/*.myslide{
 		height: 500px;
-	}
+	}*/
 	.txt{
 		letter-spacing: 2px;
 		line-height: 25px;
