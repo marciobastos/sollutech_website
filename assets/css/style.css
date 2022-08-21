@@ -112,10 +112,8 @@ button {
 	}
 	li:nth-child(3) {
 		animation-delay: 400ms;
-		background-color: yellow;
 	}
 	li:nth-child(4) {
-		background-color: red;
 		animation-delay: 600ms;
 	}
 	li:nth-child(5) {
@@ -156,7 +154,7 @@ button {
 	max-width: var(--container);
 	height: 100vh;
 	width: 100%;
-	object-fit: content;
+	object-fit: cover;
 }
 .prev, .next{
 	position: absolute;
