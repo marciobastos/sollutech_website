@@ -61,6 +61,7 @@ nav {
 #nav__items {
 	display: flex;
 	/*flex-direction: row;*/
+	margin: 0;
 }
 #nav__items li a{
 	margin-right: 10px;
@@ -75,7 +76,7 @@ button {
 		padding: 0 10px 0 10px;
 	}
 }
-/* ================== MEDIA QUERIES (MEDIUM DEVICES) =======================*/
+/* ================== MEDIA QUERIES (SMALL DEVICES) =======================*/
 @media screen and (max-width: 768px) {
 	button {
 		display: inline-block;
@@ -96,6 +97,10 @@ button {
 		perspective: 300px;
 		bottom: 0;
 	}
+	#nav__items{
+		/*background-color: black;*/
+		padding: 0;
+	}
 	li {
 		width: 100%;
 		opacity: 0;
@@ -107,8 +112,10 @@ button {
 	}
 	li:nth-child(3) {
 		animation-delay: 400ms;
+		background-color: yellow;
 	}
 	li:nth-child(4) {
+		background-color: red;
 		animation-delay: 600ms;
 	}
 	li:nth-child(5) {
@@ -126,7 +133,7 @@ button {
 	ul li a{
 		color:  #fff;
 		height: 100%;
-		padding: 0.1rem 1rem;
+		padding: 0.03rem 4rem;
 		margin-bottom: 0;
 		display: block;
 		border-radius: 0;
@@ -149,7 +156,7 @@ button {
 	max-width: var(--container);
 	height: 100vh;
 	width: 100%;
-	object-fit: cover;
+	object-fit: content;
 }
 .prev, .next{
 	position: absolute;
