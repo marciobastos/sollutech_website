@@ -82,7 +82,7 @@ button {
 		display: inline-block;
 		background: transparent;
 		color: #fff;
-		font-size: 30px;
+		font-size: 40px;
 		cursor: pointer;
 	}
 	#close__nav-btn {
@@ -96,10 +96,6 @@ button {
 		display: none;
 		perspective: 300px;
 		bottom: 0;
-	}
-	#nav__items{
-		/*background-color: black;*/
-		padding: 0;
 	}
 	li {
 		width: 100%;
