@@ -9,6 +9,9 @@
 	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+	
+	<div id="preloader"></div>
+
 	<nav>
 		<div class="container">
 			<div class="nav__menu">
@@ -129,5 +132,12 @@
 	<!-- ============================ END SLIDER ======================= --> 	
 
 	<script src="./assets/js/main.js"></script>
+	<script>
+		var loader = document.getElementById("preloader");
+
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})	
+	</script>
 </body>
 </html>
