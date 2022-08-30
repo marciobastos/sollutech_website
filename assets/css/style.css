@@ -40,6 +40,7 @@ nav {
 	background-image: var(--backgroundImage);
 	box-shadow: 0 0.1rem 1.2rem rgba(12, 3, 27, 1.0);
 	z-index: 9999;
+	overflow: hidden;
 }
 .container {
 	margin: 0 auto;
@@ -53,6 +54,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	/*background: black;*/
+	margin-right: 18px;
 	
 }
 .nav__logo h2{
@@ -74,10 +76,40 @@ nav {
 button {
 	display: none;
 }
+#services.container {
+	font-size: 23px;
+	display: flex;
+	color: #000;
+}
+.card {
+	display: flex;
+	padding: 20px;
+	height: 150px;
+	min-width: 200px;
+	width: 32%;
+	background: var(--backgroundImage);
+	margin-bottom: 20px;
+	border-radius: 3px;
+	transition: all ease .3s;
+
+}
+.card:hover {
+	transform: translateY(-5px);
+}
+.card i {
+	width: 50px;
+}
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) =======================*/
 @media screen and (max-width: 1400px) {
-	nav {
-		padding: 0 10px 0;
+	nav .container {
+		padding: 0 50px 0;
+	}
+	#services > .container {
+		padding: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 }
 /* ================== MEDIA QUERIES (SMALL DEVICES) =======================*/
